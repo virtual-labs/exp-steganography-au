@@ -1,4 +1,4 @@
- ## Theory
+ ### Theory
   <p>Distortion steganography is a technique used to embed information within digital media, such as images, while minimizing perceptible changes or distortions to the media content. This technique often utilizes the Discrete Cosine Transform (DCT) due to its efficiency in representing image data in the frequency domain.</p>
 
 <h4>Key Concepts and Techniques</h4>
