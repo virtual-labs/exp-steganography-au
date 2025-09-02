@@ -51,6 +51,91 @@
       },
       "correctAnswer": "d",
       "difficulty": "intermediate"
+    },
+    {
+      "question": "What is the primary purpose of using the Discrete Cosine Transform (DCT) in steganography?",
+      "answers": {
+        "a": "To encrypt secret messages before embedding.",
+        "b": "To transform image data into frequency components for embedding.",
+        "c": "To detect hidden data within images.",
+        "d": "To reduce the image size without affecting quality."
+      },
+      "explanations": {
+        "a": "Incorrect. DCT is not used for encryption.",
+        "b": "Correct. DCT converts spatial data into frequency components, making it easier to hide data in less perceptible areas.",
+        "c": "Incorrect. DCT is used for embedding, not detection.",
+        "d": "Incorrect. While DCT aids compression, here it is used for data hiding."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Why are middle-frequency DCT coefficients typically used for embedding data in distortion steganography?",
+      "answers": {
+        "a": "They are easier to modify without visual detection.",
+        "b": "They store larger amounts of data than other coefficients.",
+        "c": "They improve image compression efficiency.",
+        "d": "They are ignored by most detection algorithms."
+      },
+      "explanations": {
+        "a": "Correct. Middle-frequency DCT coefficients provide a balance between imperceptibility and robustness.",
+        "b": "Incorrect. Data capacity depends on embedding methods, not just coefficient selection.",
+        "c": "Incorrect. Compression efficiency is not the primary purpose here.",
+        "d": "Incorrect. Detection algorithms can still analyze these coefficients."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "In distortion steganography, what does the term 'distortion function' refer to?",
+      "answers": {
+        "a": "A mathematical model measuring changes in image quality after embedding.",
+        "b": "A method used to compress image data.",
+        "c": "An encryption key for hiding messages.",
+        "d": "A noise filter applied to reduce detection."
+      },
+      "explanations": {
+        "a": "Correct. A distortion function quantifies image quality differences before and after data embedding.",
+        "b": "Incorrect. Compression is unrelated to distortion measurement.",
+        "c": "Incorrect. Distortion functions are not encryption methods.",
+        "d": "Incorrect. Noise reduction is not the goal here."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Which of the following best describes distortion steganography?",
+      "answers": {
+        "a": "Hiding data by modifying the image pixels directly in the spatial domain.",
+        "b": "Hiding data by introducing controlled modifications detectable only with the original image.",
+        "c": "Hiding data by replacing the least significant bits in an image.",
+        "d": "Hiding data by encrypting before embedding."
+      },
+      "explanations": {
+        "a": "Incorrect. That's spatial-domain steganography, not distortion-based methods.",
+        "b": "Correct. Distortion steganography uses small controlled changes requiring the original image for detection.",
+        "c": "Incorrect. LSB is a separate technique.",
+        "d": "Incorrect. Encryption is independent of embedding."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Which property of the human visual system is exploited in DCT-based steganography?",
+      "answers": {
+        "a": "High sensitivity to changes in high-frequency components.",
+        "b": "Low sensitivity to slight changes in middle-frequency components.",
+        "c": "Complete blindness to color changes.",
+        "d": "Equal sensitivity across all image frequencies."
+      },
+      "explanations": {
+        "a": "Incorrect. High-frequency changes are noticeable to the human eye.",
+        "b": "Correct. DCT-based methods exploit the human eye’s reduced sensitivity to middle-frequency alterations.",
+        "c": "Incorrect. The human eye can detect color changes.",
+        "d": "Incorrect. The human eye has varying sensitivities to different frequencies."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
     }
   ]
 }
