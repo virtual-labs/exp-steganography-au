@@ -1,4 +1,4 @@
-<h3>Aim of the Experiment</h3>
+
 
 <p>
 To explore and reinforce the concept of steganography through the implementation of an alternate algorithm known as <b>distortion steganography</b>. This technique is aimed at embedding hidden information within digital media by making subtle, controlled modifications that are imperceptible to the human eye. 
