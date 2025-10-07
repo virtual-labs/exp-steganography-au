@@ -2,38 +2,106 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "Which technique is commonly used in steganography to embed information into images?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Changing the file format of the image.",
+        "b": "Modifying the most significant bits (MSBs) of image pixels.",
+        "c": "Replacing the least significant bits (LSBs) of image pixels.",
+        "d": "Applying a digital watermark to the image."
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Incorrect. Changing the file format does not involve embedding data within the image.",
+        "b": "Incorrect. Modifying MSBs may alter image appearance significantly and is less common in steganography.",
+        "c": "Correct. Replacing LSBs with hidden data is a common technique in image steganography.",
+        "d": "Incorrect. Digital watermarking is used for copyright protection, not for hiding data within images."
       },
       "correctAnswer": "c",
-      "difficulty": "beginner"
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What is a potential challenge in detecting steganographic content in images?",
+      "answers": {
+        "a": "Visual inspection by human observers.",
+        "b": "Analysis of the image's histogram.",
+        "c": "Statistical analysis of pixel values.",
+        "d": "Applying compression techniques to the image."
+      },
+      "explanations": {
+        "a": "Possible, but sophisticated steganographic methods can evade visual detection.",
+        "b": "Histogram analysis can reveal anomalies, but modern steganographic techniques can mitigate detection.",
+        "c": "Correct. Statistical analysis can detect subtle changes in pixel values caused by steganography.",
+        "d": "Compression affects image quality but may not directly reveal hidden data."
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "In digital steganography, what is a 'carrier'?",
+      "answers": {
+        "a": "The method used to encrypt the hidden data.",
+        "b": "The algorithm for compressing the steganographic message.",
+        "c": "The digital media that conceals the hidden information.",
+        "d": "A cryptographic key used for decrypting the hidden data."
+      },
+      "explanations": {
+        "a": "Incorrect. Encryption methods are applied to secure data, not to hide it within carriers.",
+        "b": "Incorrect. Compression algorithms reduce file size and are not directly related to steganography.",
+        "c": "Correct. A carrier is the digital media (e.g., image, audio) that conceals hidden information in steganography.",
+        "d": "Incorrect. Cryptographic keys are used in encryption and decryption processes, not in steganography."
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Which transformation is typically applied to convert an image into the frequency domain for distortion steganography?",
+      "answers": {
+        "a": "Fourier Transform (FT)",
+        "b": "Wavelet Transform (WT)",
+        "c": "Discrete Cosine Transform (DCT)",
+        "d": "Run-Length Encoding (RLE)"
+      },
+      "explanations": {
+        "a": "FT is used in some domains, but DCT is more common in JPEG image processing.",
+        "b": "Wavelet Transform is used in some compression techniques, but not typically in JPEG-based steganography.",
+        "c": "Correct. DCT is used in JPEG compression and is commonly used in frequency-based steganography.",
+        "d": "RLE is a compression technique, not used for frequency domain transformation."
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What is the main advantage of using distortion steganography over simple LSB techniques?",
+      "answers": {
+        "a": "It completely hides the data without modifying the carrier.",
+        "b": "It allows the use of audio instead of images.",
+        "c": "It modifies the frequency domain, making detection more difficult.",
+        "d": "It makes the image larger, which increases security."
+      },
+      "explanations": {
+        "a": "Incorrect. All steganography involves some modification of the carrier.",
+        "b": "Incorrect. Distortion steganography can work on images and other media, but is not specific to audio.",
+        "c": "Correct. Modifying DCT coefficients in the frequency domain makes the changes less perceptible and harder to detect.",
+        "d": "Incorrect. Increasing file size does not inherently increase security."
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Why is the inverse Discrete Cosine Transform (IDCT) applied after embedding data in distortion steganography?",
+      "answers": {
+        "a": "To increase the size of the image for more data storage.",
+        "b": "To convert the image back to a format viewable by users.",
+        "c": "To encrypt the hidden message before saving.",
+        "d": "To change the image format to a stego-specific format."
+      },
+      "explanations": {
+        "a": "IDCT does not change the image size for storage purposes.",
+        "b": "Correct. IDCT converts the modified frequency-domain image back to the spatial domain so that it appears normal to viewers.",
+        "c": "IDCT is not an encryption technique.",
+        "d": "There is no specific stego format; IDCT is used for image reconstruction."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
     }
   ]
 }
