@@ -3,7 +3,7 @@
 | <b>Discipline  | <b>Computer Science and Engineering      |
 | :------------- | :--------------------------------------- |
 | <b> Lab        | <b> Computer Forensics           |
-| <b> Experiment | <b> File Signature Analysis and File Carving Techniques |
+| <b> Experiment | <b> Distortion Steganography |
 
 ### About the Experiment
 
